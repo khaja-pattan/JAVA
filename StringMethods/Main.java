@@ -2,7 +2,7 @@ package StringMethods;
 public class Main{
     public static void main(String[] args) {
 
-        String str = "Hello World !";
+        String str = " Hello World ! ";
 
         String str2 = "Hello";
 
@@ -40,6 +40,8 @@ public class Main{
         // words[0] = "Hi"
         // words[1] = "every"
         // words[2] = "one"
+
+        System.out.println(str.trim());   // remove the use usage space in starting and ending 
 
 
 
