@@ -12,7 +12,9 @@ public class Main {
   * 
   *   ArrayList < Wrapper-class > reference_variable = new ArrayList<>();
   * 
-  *                  ( or )
+  *      
+  * 
+  *             ( or )
   * 
   *   List < Wrapper-class > reference_variable = new ArrayList<>();
   * 
@@ -31,18 +33,29 @@ public class Main {
         arr.add(40);
         arr.add(50);
 
+         arr.get(0);  // based on index  get the values 
+
         arr2.addAll(arr);  //   copy the all elements into this new List at once   arr2 = {10,20,30,40,50}
 
-   
+        arr.addFirst(5);   // add element at 0 index
 
+        arr.addLast(60);   // add at last (n) index
     
         arr.removeFirst();   // remove 0 index element 
+
         arr.removeLast();   // remove last (n) index element 
+
         arr.size(); // return the size of array 
+
         arr.contains(30) ;  // return ture if element contain in array 
+
        arr.equals(arr2) ;  // return ture if both list are equles
-       arr.clear();
-       arr2.forEach(n-> System.out.println(n));
+
+       arr.clear();        // remove all elements at once 
+
+       arr2.forEach(n-> System.out.println(n));  //  print the all elements 
+
+       arr.isEmpty();   // return ture if list is empty  
 
     }
 }
